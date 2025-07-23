@@ -1,6 +1,6 @@
 {
 	"name": "react-native-rich-toast",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "a toast component library for react native with rich colors and variants",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -34,6 +34,6 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/laurent/react-native-rich-toast"
+		"url": "https://github.com/laurentcodes/react-native-rich-toast"
 	}
 }
