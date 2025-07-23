@@ -1,4 +1,4 @@
-# react native styled toast
+# react native rich toast
 
 a toast component library for react native with rich colors and variants
 
