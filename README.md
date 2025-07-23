@@ -1,22 +1,22 @@
-# React Native Styled Toast
+# react Native Styled Toast
 
-A toast component library for React Native with rich colors and variants.
+a toast component library for React Native with rich colors and variants.
 
-## Installation
+## installation
 
 ```bash
 npm install react-native-rich-toast react-native-toast-message
 ```
 
-## Setup
+## note
 
-First, install the peer dependency `react-native-toast-message` and follow its setup instructions.
+this depends on `react-native-toast-message` so make sure it is installed
 
-## Usage
+## usage
 
-### Basic Setup
+### basic Setup
 
-Import and use the `Toast` component in your root component:
+import and use the `Toast` component in your root component:
 
 ```tsx
 import React from 'react';
@@ -26,91 +26,93 @@ import { Toast } from 'react-native-rich-toast';
 export default function App() {
 	return (
 		<View style={{ flex: 1 }}>
-			{/* Your app content */}
+			{/* your app content */}
 
-			{/* Toast component - place at the bottom of your component tree */}
+			{/* toast component */}
 			<Toast topOffset={50} richColors />
 		</View>
 	);
 }
 ```
 
-### Showing Toasts
+### showing toasts
 
-Use the `toast` API to show different types of toasts:
+use the `toast` API to show different types of toasts:
 
 ```tsx
 import { toast } from 'react-native-rich-toast';
 
-// Success toast
-toast.success('Operation completed successfully!');
+// success toast
+toast.success('operation completed successfully!');
 
-// Error toast
-toast.error('Something went wrong', {
-	description: 'Please try again later',
-});
+// error toast
+toast.error('something went wrong');
 
-// Info toast
-toast.info('New update available');
+// info toast
+toast.info('new update available');
 
-// Warning toast
-toast.warning('Please save your work', {
-	description: 'Auto-save will happen in 5 minutes',
+// warning toast
+toast.warning('please save your work');
+
+// toast with description
+toast.success('operation completed successfully!', {
+	description: 'the Operation successfully completed.',
 });
 ```
 
-## Props
+## props
 
-### Toast Component
+### toast component
 
-| Prop         | Type      | Default     | Description                                           |
+| prop         | type      | default     | description                                           |
 | ------------ | --------- | ----------- | ----------------------------------------------------- |
 | `topOffset`  | `number`  | `undefined` | Offset from the top of the screen                     |
 | `richColors` | `boolean` | `true`      | Enable rich color themes for different toast variants |
 
-### Toast API
+### toast api
 
-The `toast` object provides methods for different toast types:
+the `toast` object provides methods for different toast types:
 
 - `toast.success(message, options?)` - Show success toast
 - `toast.error(message, options?)` - Show error toast
 - `toast.info(message, options?)` - Show info toast
 - `toast.warning(message, options?)` - Show warning toast
 
-### Toast Options
+### toast options
 
-| Option        | Type     | Description                |
+| option        | type     | description                |
 | ------------- | -------- | -------------------------- |
-| `description` | `string` | Optional secondary message |
+| `description` | `string` | optional secondary message |
 
-## Customization
+## customization
 
-### Rich Colors
+### rich colors
 
 By default, the toast does not use rich colors for different variants. You can enable this by setting `richColors={true}`:
 
 ```tsx
-<Toast topOffset={50} richColors />
+<Toast richColors />
 ```
 
-### Color Themes
+### color themes
 
-The library includes predefined color themes for each variant:
+the library includes predefined color themes for each variant:
 
-- **Success**: Green theme with light green background
-- **Error**: Red theme with light red background
-- **Info**: Blue theme with light blue background
-- **Warning**: Orange theme with light orange background
+- **success**: green theme with light green background
+- **error**: red theme with light red background
+- **info**: blue theme with light blue background
+- **warning**: orange theme with light orange background
 
-When `richColors` is disabled, all toasts use a neutral gray theme.
+when `richColors` is disabled, all toasts use a white theme.
 
-## Dependencies
+## dependencies
 
-- `react-native-toast-message` - Required peer dependency
+- `react-native-toast-message` - required peer dependency
 - `react` >= 16.8.0
 - `react-native` >= 0.60.0
 
-## License
+## license
 
 MIT
+
 # react-native-rich-toast
