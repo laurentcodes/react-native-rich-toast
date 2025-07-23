@@ -56,7 +56,7 @@ toast.warning('please save your work');
 
 // toast with description
 toast.success('operation completed successfully!', {
-	description: 'the Operation successfully completed.',
+	description: 'the operation successfully completed.',
 });
 ```
 
@@ -88,7 +88,7 @@ the `toast` object provides methods for different toast types:
 
 ### rich colors
 
-By default, the toast does not use rich colors for different variants. You can enable this by setting `richColors={true}`:
+by default, the toast does not use rich colors for different variants. you can enable this by setting `richColors={true}`:
 
 ```tsx
 <Toast richColors />
