@@ -29,7 +29,7 @@ export default function App() {
 			{/* your app content */}
 
 			{/* toast component */}
-			<Toast topOffset={50} richColors />
+			<Toast />
 		</View>
 	);
 }
@@ -66,17 +66,17 @@ toast.success('operation completed successfully!', {
 
 | prop         | type      | default     | description                                           |
 | ------------ | --------- | ----------- | ----------------------------------------------------- |
-| `topOffset`  | `number`  | `undefined` | Offset from the top of the screen                     |
-| `richColors` | `boolean` | `true`      | Enable rich color themes for different toast variants |
+| `topOffset`  | `number`  | `undefined` | offset from the top of the screen                     |
+| `richColors` | `boolean` | `false`     | enable rich color themes for different toast variants |
 
 ### toast api
 
 the `toast` object provides methods for different toast types:
 
-- `toast.success(message, options?)` - Show success toast
-- `toast.error(message, options?)` - Show error toast
-- `toast.info(message, options?)` - Show info toast
-- `toast.warning(message, options?)` - Show warning toast
+- `toast.success(message, options?)` - show success toast
+- `toast.error(message, options?)` - show error toast
+- `toast.info(message, options?)` - show info toast
+- `toast.warning(message, options?)` - show warning toast
 
 ### toast options
 
