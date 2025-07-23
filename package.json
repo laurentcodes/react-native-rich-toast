@@ -1,6 +1,6 @@
 {
 	"name": "react-native-rich-toast",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A customizable toast component library for React Native with rich colors and variants",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
