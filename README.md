@@ -1,6 +1,6 @@
 # react native styled toast
 
-a toast component library for React Native with rich colors and variants.
+a toast component library for react native with rich colors and variants
 
 ## installation
 
