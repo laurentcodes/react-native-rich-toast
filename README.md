@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/react-native-rich-toast.svg)](https://badge.fury.io/js/react-native-rich-toast)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-rich-toast.svg)](https://www.npmjs.com/package/react-native-rich-toast)
 [![license](https://img.shields.io/npm/l/react-native-rich-toast.svg)](https://github.com/laurentcodes/react-native-rich-toast/blob/main/LICENSE)
-[![build status](https://img.shields.io/github/actions/workflow/status/laurentcodes/react-native-rich-toast/ci.yml?branch=main)](https://github.com/laurentcodes/react-native-rich-toast/actions)
+[![build status](https://img.shields.io/github/actions/workflow/status/laurentcodes/react-native-rich-toast/npm-publish.yml?branch=main)](https://github.com/laurentcodes/react-native-rich-toast/actions)
 
 a toast component library for react native with rich colors and variants
 
