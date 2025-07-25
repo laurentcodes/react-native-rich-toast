@@ -64,10 +64,11 @@ toast.success('operation completed successfully!', {
 
 ### toast component
 
-| prop         | type      | default     | description                                           |
-| ------------ | --------- | ----------- | ----------------------------------------------------- |
-| `topOffset`  | `number`  | `undefined` | offset from the top of the screen                     |
-| `richColors` | `boolean` | `false`     | enable rich color themes for different toast variants |
+| prop         | type      | default     | description                                               |
+| ------------ | --------- | ----------- | --------------------------------------------------------- |
+| `topOffset`  | `number`  | `undefined` | offset from the top of the screen                         |
+| `position`   | `string`  | `top`       | position of the toast on screen (e.g., 'top' or 'bottom') |
+| `richColors` | `boolean` | `false`     | enable rich color themes for different toast variants     |
 
 ### toast api
 
