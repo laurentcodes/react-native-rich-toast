@@ -1,6 +1,6 @@
 {
 	"name": "react-native-rich-toast",
-	"version": "1.0.51",
+	"version": "1.0.6",
 	"description": "a toast component library for react native with rich colors and variants",
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -14,7 +14,10 @@
 		"notification",
 		"alert",
 		"message",
-		"ui"
+		"ui",
+		"rich-toast",
+		"rich-colors",
+		"rich-variants"
 	],
 	"author": "Laurent",
 	"license": "MIT",
@@ -24,8 +27,8 @@
 		"react-native-toast-message": ">=2.0.0"
 	},
 	"devDependencies": {
-		"@types/react": "^18.0.0",
-		"@types/react-native": "^0.72.0",
+		"@types/react": "^19.1.8",
+		"@types/react-native": "^0.73.0",
 		"typescript": "^5.0.0"
 	},
 	"files": [

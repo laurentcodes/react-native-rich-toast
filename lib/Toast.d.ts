@@ -6,6 +6,7 @@ interface ToastConfig {
 interface ToastProps {
     topOffset?: number;
     richColors?: boolean;
+    position?: 'top' | 'bottom';
 }
 export interface ToastOptions {
     description?: string;
@@ -19,19 +20,19 @@ export interface ToastAPI {
 }
 export declare const createToastConfig: (config?: ToastConfig) => {
     success: {
-        (props: BaseToastProps): React.JSX.Element;
+        (props: BaseToastProps): import("react/jsx-runtime").JSX.Element;
         displayName: string;
     };
     error: {
-        (props: BaseToastProps): React.JSX.Element;
+        (props: BaseToastProps): import("react/jsx-runtime").JSX.Element;
         displayName: string;
     };
     info: {
-        (props: BaseToastProps): React.JSX.Element;
+        (props: BaseToastProps): import("react/jsx-runtime").JSX.Element;
         displayName: string;
     };
     warning: {
-        (props: BaseToastProps): React.JSX.Element;
+        (props: BaseToastProps): import("react/jsx-runtime").JSX.Element;
         displayName: string;
     };
 };

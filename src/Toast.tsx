@@ -24,6 +24,7 @@ interface ToastConfig {
 interface ToastProps {
 	topOffset?: number;
 	richColors?: boolean;
+	position?: 'top' | 'bottom';
 }
 
 const textSizes = {
@@ -158,10 +159,11 @@ export const toast: ToastAPI = {
 const StyledToast: React.FC<ToastProps> = ({
 	topOffset,
 	richColors = false,
+	position = 'top',
 }) => {
 	const toastConfig = createToastConfig({ richColors });
 
-	return <Toast config={toastConfig} topOffset={topOffset} />;
+	return <Toast config={toastConfig} topOffset={topOffset} position={position} />;
 };
 
 const styles = StyleSheet.create({
